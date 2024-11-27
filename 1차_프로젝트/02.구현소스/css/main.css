@@ -30,6 +30,7 @@ h2 {
   color: #ccc;
   outline: none;
 }
+
 /************************ 1. 상단바 ************************/
 /* 1-1 */
 .logo{
@@ -43,7 +44,7 @@ nav {
   background-color: white;
   color: white;
   text-align: center;
-  padding: 10px 0;
+  padding: 15px 0;
 }
 nav ul {
   list-style-type: none;

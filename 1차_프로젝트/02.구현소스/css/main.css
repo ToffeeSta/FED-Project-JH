@@ -19,8 +19,7 @@ main .inbox {
 }
 
 /* 임시 타이틀 */
-h1,
-h2 {
+h2.temp {
   position: absolute;
   left: 0;
   width: 100%;
@@ -29,14 +28,4 @@ h2 {
   font-size: 4vw;
   color: #ccc;
   outline: none;
-}
-
-/************************ 1. 상단바 ************************/
-/* 1-1 */
-.logo{
-    margin: 0 auto;
-    font-size: 40px;
-    font-style: bold;
-    color: #0c4da2;
-    vertical-align: middle;
 }

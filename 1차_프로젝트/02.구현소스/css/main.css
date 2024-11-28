@@ -38,28 +38,5 @@ h2 {
     font-size: 40px;
     font-style: bold;
     color: #0c4da2;
-}
-/* 1-2 상단 네비게이션 */
-nav {
-  background-color: white;
-  color: white;
-  text-align: center;
-  padding: 15px 0;
-}
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-nav ul li {
-  display: inline;
-  margin-right: 20px;
-}
-nav ul li a {
-  color: black;
-  text-decoration: none;
-  font-size: 20px;
-}
-nav ul li a:hover {
-  text-decoration: underline;
-  color: #0c4da2;
+    vertical-align: middle;
 }

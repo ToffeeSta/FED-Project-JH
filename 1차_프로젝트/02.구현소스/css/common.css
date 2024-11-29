@@ -10,9 +10,12 @@
 /* 1-1. 상단 로고 */
 .logo{
   color: #0c4da2;
-  font-size: 36px;
+  font-size: 30px;
   font-weight: bold;
   padding: 10px 0;
+  /* font-family: "Tilt Warp"; */
+  font-family: "Noto Sans";
+  font-weight: 1000;
 }
 
 /* 1-2. GNB 메뉴 */

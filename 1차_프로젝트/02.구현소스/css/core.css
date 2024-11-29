@@ -2,6 +2,16 @@
 /* Samsung AI PJ : 공통 클래스 CSS - core.css */
 /* 공통 셋팅을 위한 클래스 + 웹폰트 */
 
+
+/* 웹폰트 CDN */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&family=Tilt+Warp&display=swap');
+/* 
+    0. 메뉴 등 일반체
+    font-family: 'Noto Sans KR', sans-serif;
+    2. 삼성 로고 <- 더 얇은 폰트로 변경필요해 보임
+    family=Tilt+Warp
+*/
+
 html {
   font-size: 10px;
 }

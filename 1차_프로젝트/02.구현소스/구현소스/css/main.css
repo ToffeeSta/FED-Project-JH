@@ -37,6 +37,7 @@ h2.temp {
   /* height: 540px; */
 }
 /* 2-1. 백그라운드 동영상 */
+<<<<<<< HEAD:1차_프로젝트/02.구현소스/구현소스/css/main.css
 .main-area video {
   /* position: absolute; */
   /* aspect-ratio: 2/1; */
@@ -44,4 +45,16 @@ h2.temp {
   height: 100%;
   object-position: top;
   /* object-fit: cover; */
+=======
+.ban-box {
+  /* position: relative; */
+  /* width: 100%; */
+  /* height: 100%; */
+}
+.ban-box video {
+  /* position: absolute; */
+  width: 100%;
+  height: 100%;
+  object-position: top;
+>>>>>>> parent of f2d6311 (ㅎ):1차_프로젝트/02.구현소스/css/main.css
 }

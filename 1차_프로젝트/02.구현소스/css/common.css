@@ -9,13 +9,14 @@
 }
 /* 1-1. 상단 로고 */
 .logo{
-  color: #0c4da2;
-  font-size: 30px;
-  font-weight: bold;
-  padding: 10px 0;
-  /* font-family: "Tilt Warp"; */
-  font-family: "Noto Sans";
-  font-weight: 1000;
+  padding: 18px 10px;
+}
+.logo img{
+  width: 150px;
+}
+.logo a:hover>img{
+  content: url("../img/samsung_logo_02.png");
+  width: 150px;
 }
 
 /* 1-2. GNB 메뉴 */
@@ -51,7 +52,7 @@
 
 /* .gnb ul>li 마우스 오버시 하위 a 색상변경 */
 .gnb ul>li:hover>a{
-  color: #0c4da2;
+  color:  #1428a0;
 }
 
 /* 다른 같은 구조의 요소에도 모두 적용위해
@@ -72,7 +73,7 @@
   width: 0%;
   height: 2px;
   /* margin-top: 2px; */
-  background-color: #0c4da2;
+  background-color: #1428a0;
 
   margin-top: 30px;
   /* margin-left: 50%; */

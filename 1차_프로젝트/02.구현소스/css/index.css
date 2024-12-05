@@ -9,9 +9,9 @@
 @import url(./grid_12_flex.css);
 
 /* body outline 표시 */
-body * {
+/* body * {
   outline: 2px dashed #ccc;
-}
+} */
 
 /* 임시 height 값 */
 main .inbox {
@@ -50,8 +50,7 @@ h2.temp {
 }
 /* 2-1. 백그라운드 동영상 */
 .ban-box video {
-  /* position: absolute; */
+  position: absolute;
   width: 100%;
-  height: 100%;
   object-position: top;
 }

@@ -4,37 +4,37 @@
 /* 공유기능 요소 셋팅 */
 
 /**************** 1. 상단영역 ****************/
-.top-area {
-  min-height: 72px;
+#header {
+  max-height: 72px;
   padding: 0 3vw;
   transition: 0.5s;
-  z-index: 5000;
+  z-index: 999;
   position: fixed;
   top: 0;
   width: 100%;
   background: linear-gradient(360deg, rgba(0, 0, 0, 0) 0.01%, rgba(175, 175, 175, 0.5) 100%);
 }
 
-.top-area.active{
+#header.active{
   transform: translateY(-100%);
 }
 
-.top-area:hover {
+#header:hover {
   background: white;
 }
 
-.top-area:hover .logo img {
+#header:hover .logo img {
   content: url("../img/samsung_logo_02.png");
   width: 150px;
 }
 /* 1-1. 상단 로고 */
 .logo {
-  padding: 18px 10px;
+  padding: 10px;
+  margin: 0;
 }
 .logo img {
   width: 150px;
 }
-
 
 /* 1-2. GNB 메뉴 */
 /* GNB 메뉴 하위 a요소 */
@@ -58,7 +58,7 @@
   position: relative;
   /* 부모자격 - .smenu의 left값 */
   /* float: left; ->flex로 전환 */
-  padding: 25px 30px;
+  padding: 20px 40px;
   /* line-height: 78px;
   ->블록가상요소 밑줄이 아래로 밀려서 주석 */
   font-weight: bold;

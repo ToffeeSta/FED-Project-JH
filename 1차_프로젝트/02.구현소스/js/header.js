@@ -1,5 +1,5 @@
 // 상단 네비 스크롤 시
-const header = document.querySelector('.top-area');
+const header = document.getElementById('header');
 
 let pos = {y:0,y2:0,status:true};
 window.addEventListener('scroll',function(){

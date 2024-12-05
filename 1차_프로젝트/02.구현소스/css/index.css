@@ -9,9 +9,9 @@
 @import url(./grid_12_flex.css);
 
 /* body outline 표시 */
-body * {
+/* body * {
   outline: 2px dashed #ccc;
-}
+} */
 
 /* 임시 height 값 */
 main .inbox {

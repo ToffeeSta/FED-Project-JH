@@ -19,7 +19,7 @@ html {
 /* 중앙 속박스 */
 .inbox{
     /* 최대 width */
-    max-width: 1400px;
+    max-width: 1440px;
     /* 블록박스 중앙정렬 */
     margin: 0 auto;
 }

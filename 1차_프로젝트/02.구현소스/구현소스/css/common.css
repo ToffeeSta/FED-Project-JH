@@ -6,7 +6,11 @@
 /**************** 1. 상단영역 ****************/
 .top-area{
 <<<<<<< HEAD:1차_프로젝트/02.구현소스/구현소스/css/common.css
+<<<<<<< HEAD:1차_프로젝트/02.구현소스/구현소스/css/common.css
   height: 72px;
+=======
+  min-height: 72px;
+>>>>>>> parent of f2d6311 (ㅎ):1차_프로젝트/02.구현소스/css/common.css
 =======
   min-height: 72px;
 >>>>>>> parent of f2d6311 (ㅎ):1차_프로젝트/02.구현소스/css/common.css

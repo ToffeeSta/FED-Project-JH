@@ -30,29 +30,22 @@ h2.temp {
   outline: none;
 }
 
+<<<<<<< HEAD:1차_프로젝트/02.구현소스/css/index.css
 /********************* 메인 영역 *********************/
 /************** 2. 메인배너영역 **************/
+=======
+/* 2. 메인배너영역 */
+>>>>>>> parent of 538a84d (g):1차_프로젝트/02.구현소스/css/main.css
 .main-area {
-  position: relative;
+  /* position: relative; */
   /* height: 540px; */
-}
-.main-area .ban-area{
-  position: absolute;
-  top: 0;
-  /* 나의 부모는? #ban-area */
-
-  /* 가로중앙셋팅: 
-  앱솔루트이므로 마.영.오 적용불가! */
-  left: 50%;
-  translate: -50%;
-
-  width: 100%;
-  height: 530px;
 }
 /* 2-1. 백그라운드 동영상 */
 .main-area video {
+  /* position: absolute; */
+  /* aspect-ratio: 2/1; */
   width: 100%;
   height: 100%;
   object-position: top;
-  
+  /* object-fit: cover; */
 }

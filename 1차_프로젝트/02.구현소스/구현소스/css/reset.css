@@ -19,7 +19,7 @@ dt,
 dd,
 p,
 figure,
-figcaption {
+figcaption{
     margin: 0;
     padding: 0;
 }

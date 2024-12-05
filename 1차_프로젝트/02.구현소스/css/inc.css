@@ -7,11 +7,22 @@
 .top-area {
   min-height: 72px;
   padding: 0 3vw;
-  background: #f5f5f5;
+  transition: 0.5s;
+  z-index: 5000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0) 0.01%, rgba(175, 175, 175, 0.5) 100%);
 }
+
+.top-area.active{
+  transform: translateY(-100%);
+}
+
 .top-area:hover {
-  background-color: #fff;
+  background: white;
 }
+
 .top-area:hover .logo img {
   content: url("../img/samsung_logo_02.png");
   width: 150px;

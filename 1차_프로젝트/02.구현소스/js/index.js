@@ -5,15 +5,16 @@ document.addEventListener("DOMContentLoaded", () => {
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting && entry.intersectionRatio > 0.5) {
+        if (entry.isIntersecting && entry.intersectionRatio > 0.3) {
           video.play(); // 비디오 재생
         } else {
           video.pause(); // 비디오 정지
+          video.currentTime = 0; // 처음으로 돌아가기
         }
       });
     },
     {
-      threshold: [0.5], // 비디오 요소의 50%가 보이는 화면 기준
+      threshold: [0.3], // 비디오 요소의 30%가 보이는 화면 기준
     }
   );
 

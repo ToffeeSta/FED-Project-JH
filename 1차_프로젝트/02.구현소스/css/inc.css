@@ -5,17 +5,21 @@
 
 /**************** 1. 상단영역 ****************/
 #header {
-  max-height: 72px;
+  max-height: 80px;
   padding: 0;
   transition: 0.5s;
   z-index: 999;
   position: fixed;
   top: 0;
   width: 100%;
-  background: linear-gradient(360deg, rgba(0, 0, 0, 0) 0.01%, rgba(175, 175, 175, 0.5) 100%);
+  background: linear-gradient(
+    360deg,
+    rgba(0, 0, 0, 0) 0.01%,
+    rgba(175, 175, 175, 0.5) 100%
+  );
 }
 
-#header.active{
+#header.active {
   transform: translateY(-100%);
 }
 
@@ -27,7 +31,7 @@
   content: url("../img/samsung_logo_02.png");
   width: 150px;
 }
-.cont-box{
+.cont-box {
   height: 100%;
 }
 /* 1-1. 상단 로고 */
@@ -40,6 +44,9 @@
 }
 
 /* 1-2. GNB 메뉴 */
+.fx-box{
+  margin-top: 6px;
+}
 /* GNB 메뉴 하위 a요소 */
 .gnb a {
   display: block;
@@ -90,11 +97,11 @@
   top: 0;
   left: 50%;
   width: 0%;
-  height: 2px;
-  
+  height: 3px;
+
   background-color: #1428a0;
 
-  margin-top: 30px;
+  margin-top: 46px;
   /* margin-left: 50%; */
 
   transition: 0.3s;

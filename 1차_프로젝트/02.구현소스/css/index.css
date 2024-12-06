@@ -10,7 +10,7 @@
 
 /* body outline 표시 */
 body * {
-  /* outline: 2px dashed #ccc; */
+  outline: 2px dashed #ccc;
 }
 
 /* 임시 height 값 */
@@ -54,4 +54,38 @@ h2.temp {
 .ban-area .txt-box p {
   margin-top: 30px;
   font-size: 1.3vw;
+}
+
+/************** 3. 서브배너1 영역 **************/
+/* 3-1. 백그라운드 동영상 */
+.sub1-area video {
+  width: 100%;
+  /* margin-left: -15%; */
+  /* margin-top: 3%; */
+}
+
+/* 메인배너 텍스트 */
+.sub1-area {
+  position: relative;
+  height: 100vh;
+  background: #000;
+}
+.sub1-area .txt-box {
+  position: absolute;
+  top: 20%;
+  transform: translateY(-50%);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.sub1-area .txt-box h2 {
+  font-size: 4.3vw;
+  text-align: center;
+  color: #ededed;
+  text-shadow: 0 0 5px #000;
+}
+.sub1-area .txt-box p {
+  margin-top: 30px;
+  font-size: 1.3vw;
+  text-align: center;
 }

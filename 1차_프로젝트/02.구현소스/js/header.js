@@ -12,11 +12,11 @@ window.addEventListener('scroll',function(){
 
     if(pos.status){
         header.classList.add('active');
-        header.classList.add('qwe');
+        header.classList.add('active2');
     }else{
         header.classList.remove('active');
         if(pos.y === 0){
-            header.classList.remove('qwe');
+            header.classList.remove('active2');
         }
     }
 })

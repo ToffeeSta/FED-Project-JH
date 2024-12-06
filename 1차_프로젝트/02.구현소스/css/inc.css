@@ -23,6 +23,7 @@
   transform: translateY(-100%);
 }
 
+/* 마우스 오버인 경우 디자인 변경 */
 #header:hover {
   background: white;
 }
@@ -31,14 +32,16 @@
   content: url("../img/samsung_logo_02.png");
   width: 150px;
 }
-#header.qwe {
+/* 스크롤 업인 경우 디자인 변경 */
+#header.active2 {
   background: white;
 }
 
-#header.qwe .logo img {
+#header.active2 .logo img {
   content: url("../img/samsung_logo_02.png");
   width: 150px;
 }
+/******** 네비 박스 요소 ********/
 .cont-box {
   height: 100%;
 }

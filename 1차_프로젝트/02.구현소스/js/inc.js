@@ -8,6 +8,7 @@ $(function () {
         $.getScript('./js/header.js');
         // 그리고 header.js파일도 적용시키기
     });
+    
     //푸터는 위와 동일
 //     $("#footer").load("inc.html .footer-con, .quick-box",function(){
 //         $.getScript('./js/footer.js');

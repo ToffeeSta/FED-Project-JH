@@ -31,6 +31,14 @@
   content: url("../img/samsung_logo_02.png");
   width: 150px;
 }
+#header.qwe {
+  background: white;
+}
+
+#header.qwe .logo img {
+  content: url("../img/samsung_logo_02.png");
+  width: 150px;
+}
 .cont-box {
   height: 100%;
 }
@@ -45,7 +53,7 @@
 }
 
 /* 1-2. GNB 메뉴 */
-.fx-box{
+.fx-box {
   margin-top: 10px;
 }
 /* GNB 메뉴 하위 a요소 */

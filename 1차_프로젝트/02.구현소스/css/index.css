@@ -9,9 +9,9 @@
 @import url(./grid_12_flex.css);
 
 /* body outline 표시 */
-body * {
+/* body * {
   outline: 2px dashed #ccc;
-}
+} */
 
 /* 임시 height 값 */
 main .inbox {
@@ -31,6 +31,9 @@ h2.temp {
 }
 /********************* 메인 영역 *********************/
 /************** 2. 메인배너영역 **************/
+.ban-area {
+  position: relative;
+}
 /* 2-1. 백그라운드 동영상 */
 .ban-area video {
   /* position: relative; */
@@ -38,10 +41,7 @@ h2.temp {
   /* object-position: top; */
 }
 
-/* 메인배너 텍스트 */
-.ban-area {
-  position: relative;
-}
+/* 2-2. 메인배너 텍스트 */
 .ban-area .txt-box {
   position: absolute;
   top: 40%;
@@ -57,34 +57,37 @@ h2.temp {
 }
 
 /************** 3. 서브배너1 영역 **************/
-/* 3-1. 백그라운드 동영상 */
-.sub1-area video {
-  width: 100%;
-  /* margin-left: -15%; */
-  /* margin-top: 3%; */
-}
-
-/* 메인배너 텍스트 */
 .sub1-area {
   position: relative;
   height: 100vh;
   background: #000;
 }
+
+/* 3-1. 백그라운드 동영상 */
+.sub1-area video {
+  width: 140%;
+  margin-left: -20%;
+  margin-top: 3%;
+}
+
+/* 3-2. 서브1배너 텍스트 */
 .sub1-area .txt-box {
   position: absolute;
-  top: 20%;
+  top: 36%;
   transform: translateY(-50%);
   left: 50%;
   transform: translateX(-50%);
+  color: #ededed;
+  text-shadow: 0 0 5px #000;
   z-index: 1;
 }
 .sub1-area .txt-box h2 {
   font-size: 4.3vw;
   text-align: center;
-  color: #ededed;
-  text-shadow: 0 0 5px #000;
 }
+
 .sub1-area .txt-box p {
+  /* opacity: 0; */
   margin-top: 30px;
   font-size: 1.3vw;
   text-align: center;

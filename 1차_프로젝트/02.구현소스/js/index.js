@@ -1,3 +1,4 @@
+/////////// sub1-area 비디오 재생 //////////////
 document.addEventListener("DOMContentLoaded", () => {
   const video = document.querySelector(".sub1-video video");
   const txtBox = document.querySelector(".sub1-area txt-box");

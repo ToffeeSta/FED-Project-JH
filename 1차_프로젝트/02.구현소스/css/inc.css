@@ -5,7 +5,7 @@
 
 /**************** 1. 상단영역 ****************/
 #header {
-  max-height: 80px;
+  max-height: 72px;
   padding: 0;
   transition: 0.5s;
   z-index: 999;
@@ -37,15 +37,16 @@
 /* 1-1. 상단 로고 */
 .logo {
   padding: 10px;
-  margin: 0;
+  margin: 6px;
 }
 .logo img {
   width: 150px;
+  margin: 0;
 }
 
 /* 1-2. GNB 메뉴 */
 .fx-box{
-  margin-top: 6px;
+  margin-top: 10px;
 }
 /* GNB 메뉴 하위 a요소 */
 .gnb a {
@@ -101,7 +102,7 @@
 
   background-color: #1428a0;
 
-  margin-top: 46px;
+  margin-top: 44px;
   /* margin-left: 50%; */
 
   transition: 0.3s;

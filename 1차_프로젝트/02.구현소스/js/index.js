@@ -1,7 +1,7 @@
 //////////// sub1-area 비디오 재생 //////////////
 document.addEventListener("DOMContentLoaded", () => {
   const video = document.querySelector(".sub1-video video");
-  const txtBox = document.querySelector(".tbox1");
+  const txtBox = document.querySelector(".tbox2");
   console.log(txtBox);
   txtBox.style.display = "none";
   
@@ -12,9 +12,10 @@ document.addEventListener("DOMContentLoaded", () => {
           video.play(); // 비디오 재생
           video.addEventListener('timeupdate',()=>{
             console.log(video.currentTime);
-            if(video.currentTime>3){
+            if(video.currentTime>2.79){
 
               txtBox.style.display = "block";
+              
             }
           })
         } else {
@@ -25,13 +26,11 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     },
     {
-      threshold: [0.5], // 비디오 요소의 30%가 보이는 화면 기준
+      threshold: [0.5], // 비디오 요소의 50%가 보이는 화면 기준
     }
   );
 
   observer.observe(document.querySelector(".sub1-video"));
-
-
 });
 
-
+//tmzmfhf

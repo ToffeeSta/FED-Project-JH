@@ -7,11 +7,11 @@
 
 /* 그리드 12 import */
 @import url(./grid_12_flex.css);
-
-/* body outline 표시 */
-/* body * {
+body * {
+  /* body outline 표시 */
   outline: 2px dashed #ccc;
-} */
+  /* overflow-x: hidden; */
+}
 
 /* 임시 height 값 */
 main .inbox {
@@ -89,4 +89,15 @@ h2.temp {
   margin-top: 30px;
   font-size: 1.3vw;
   text-align: center;
+}
+
+/* 4. 서브 배너2 */
+.sub2-area {
+  position: relative;
+}
+.sub2-area img {
+  position: absolute;
+  width: 95vw;
+  left: 0;
+  top: 0;
 }

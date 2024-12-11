@@ -9,7 +9,7 @@
 @import url(./grid_12_flex.css);
 body * {
   /* body outline 표시 */
-  outline: 2px dashed #ccc;
+  /* outline: 2px dashed #ccc; */
   /* overflow-x: hidden; */
 }
 

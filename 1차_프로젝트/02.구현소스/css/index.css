@@ -9,8 +9,7 @@
 @import url(./grid_12_flex.css);
 body * {
   /* body outline 표시 */
-  /* outline: 2px dashed #ccc; */
-  /* overflow-x: hidden; */
+  /* outline: 2px dashed #ccc;*/
 }
 
 /* 임시 height 값 */
@@ -93,12 +92,62 @@ h2.temp {
 }
 
 /* 4. 서브 배너2 */
-.sub2-area {
+.sub2-area .cont-box {
   position: relative;
 }
-.sub2-area img {
+.sub2-area .cont-box img {
   position: absolute;
   width: 95vw;
   left: 0;
   top: 0;
+}
+
+.fbox {
+  position: absolute;
+  width: 100%;
+  bottom: 5%;
+  overflow: hidden;
+}
+
+.tbox3 {
+  /* 플렉스 박스 : 하위 ul흘러감 */
+  display: flex;
+  /* ul이 2개니까 2배 크기로 만들어서
+  바깥에 하나 나가있게 함! */
+  width: 200vw;
+}
+/* 텍스트박스 하위 ul 2개 공통
+- 2개인 이유는 반복단위 최소 개수임 */
+.tbox3 ul {
+  /* 플렉스 박스 : 하위 li가 흘러감 */
+  display: flex;
+  /* ul은 또 플렉스 부모의 자식임! 등분할 */
+  flex: 1;
+
+  /* 기본초기화 */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* 하위 li 공통셋팅 */
+.tbox3 li {
+  /* 플렉스 자식 등분할! */
+  flex: 1;
+
+  text-align: center;
+  font-size: 3vw;
+  color: #3d3d3d;
+}
+
+/* 글자애니 클래스1 */
+.txt-ani1 {
+  animation: txt-flow-ani1 20s linear infinite;
+}
+
+/* 글자 흐르게 하기 키프레임1 */
+@keyframes txt-flow-ani1 {
+  to {
+    translate: -50%;
+  }
 }

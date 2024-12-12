@@ -9,7 +9,7 @@
 @import url(./grid_12_flex.css);
 body * {
   /* body outline 표시 */
-  /* outline: 2px dashed #ccc;*/
+  outline: 2px dashed #ccc;
 }
 
 /* 임시 height 값 */
@@ -95,7 +95,8 @@ h2.temp {
 .sub2-area .cont-box {
   position: relative;
 }
-.sub2-area .cont-box img {
+
+.sub2-area .cont-box > img {
   position: absolute;
   width: 95vw;
   left: 0;
@@ -133,6 +134,7 @@ h2.temp {
 /* 하위 li 공통셋팅 */
 .tbox3 li {
   /* 플렉스 자식 등분할! */
+  display: flex;
   flex: 1;
 
   text-align: center;

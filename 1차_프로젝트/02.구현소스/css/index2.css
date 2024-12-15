@@ -100,8 +100,10 @@
   }
 }
 
-.sub3-ban{
-
+.sec4 {
+  background: white;
+}
+.sub3-ban {
 }
 
 .sub3-ban .tbox {
@@ -109,7 +111,7 @@
   margin-top: 10%;
 }
 
-.sub3-ban .tbox .tit{
+.sub3-ban > .tbox .tit {
   font-size: 3.5vw;
 }
 .sub3-ban .tbox .sec4-menu {
@@ -117,8 +119,48 @@
   margin: auto;
   margin-top: 50px;
 }
-.sub3-ban .tbox .sec4-menu ul{
+.sub3-ban .tbox .sec4-menu ul {
   display: flex;
   justify-content: space-around;
   font-size: 1.3vw;
+}
+
+
+.sub3-ban .img-area ul {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 10px;
+  
+}
+.sub3-ban .img-area ul li{
+  border-radius: 1.4vw;
+  overflow: hidden;
+}
+.sub3-ban .img-area ul li:nth-child(2) {
+grid-row: span 2;
+
+}
+.sub3-ban .img-area .img-box {
+position: relative;
+}
+.sub3-ban .img-area .img-box img {
+  width: 100%;
+}
+.sub3-ban .img-area .tbox {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  display: flex;
+  flex-direction: column;
+}
+
+.sub3-ban .img-area .tbox .tit {
+  font-size: 2vw;
+  font-weight: bold;
+}
+.sub3-ban .img-area .tbox .info {
+  margin-top: 7px;
+  font-size: 1.5vw;
 }

@@ -9,12 +9,116 @@
   position: relative;
 }
 
-.main-ban .tbox1 {
-  position: absolute;
-  top: 0;
-  left: 0;
+.main-ban video {
+  width: 100%;
 }
 
-.main-ban .tbox2 h2{
-  font-size: 4.3vw;
+.main-ban .tbox {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10%;
+}
+
+.main-ban .tbox h2 {
+  font-size: 3.5vw;
+  margin-bottom: 10px;
+}
+
+.main-ban .tbox p {
+  font-size: 1.8vw;
+}
+
+.sec2 {
+  height: 100vh;
+  background: black;
+}
+.sub1-ban {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.sub1-ban video {
+  width: 100%;
+  height: 100%;
+}
+
+.sub1-ban .tbox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ededed;
+  text-shadow: 0 0 5px #000;
+  text-align: center;
+}
+
+.sub1-ban .tbox h2 {
+  font-size: 3.5vw;
+  margin-bottom: 20px;
+}
+
+.sub1-ban .tbox p {
+  font-size: 1.8vw;
+}
+
+.sec3 {
+  background: white;
+  height: 100vh;
+}
+.sub2-ban .bg-img img {
+  width: 100%;
+}
+
+.sub2-ban .img-box {
+  display: flex;
+  overflow: hidden;
+  margin-top: 50px;
+  width: 100%;
+}
+.sub2-ban .img-box ul {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  animation: img-flow-ani1 30s linear infinite;
+}
+.sub2-ban .img-box ul li {
+  width: 400px;
+  padding: 20px;
+}
+.sub2-ban .img-box ul li img {
+  width: 100%;
+}
+
+@keyframes img-flow-ani1 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.sub3-ban{
+
+}
+
+.sub3-ban .tbox {
+  text-align: center;
+  margin-top: 10%;
+}
+
+.sub3-ban .tbox .tit{
+  font-size: 3.5vw;
+}
+.sub3-ban .tbox .sec4-menu {
+  width: 50%;
+  margin: auto;
+  margin-top: 50px;
+}
+.sub3-ban .tbox .sec4-menu ul{
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.3vw;
 }

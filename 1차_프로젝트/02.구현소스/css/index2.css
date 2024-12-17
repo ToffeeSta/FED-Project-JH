@@ -5,6 +5,10 @@
 @import url(./core.css);
 @import url(./inc.css);
 
+html{
+  background: white;
+}
+
 /********************* 메인 베너 *********************/
 .main-ban {
   position: relative;
@@ -68,7 +72,6 @@
 
 /********************* 서브 베너2 *********************/
 .sec3 {
-  background: white;
   height: 100vh;
 }
 .sub2-ban .bg-img img {
@@ -107,12 +110,15 @@
 
 /********************* 서브 베너3 *********************/
 .sec4 {
-  background: white;
+outline: auto;
+height: 100vh;
 }
-
+.sub3-ban{
+  height: 100%;
+}
 .sub3-ban .tbox {
   text-align: center;
-  padding-top: 10%;
+  padding-top: 20px;
 }
 
 .sub3-ban > .tbox .tit {
@@ -143,6 +149,15 @@
 .sub3-ban .img-area ul li:nth-child(2) {
   grid-row: span 2;
 }
+
+.sub3-ban .img-area ul li:hover>.img-box img {
+  transform: scale(1.05);
+}
+
+.sub3-ban .img-area ul li:nth-child(2) .tbox{
+  color: white;
+}
+
 .sub3-ban .img-area .img-box {
   position: relative;
 }
@@ -159,10 +174,18 @@
 }
 
 .sub3-ban .img-area .tbox .tit {
-  font-size: 2vw;
+  font-size: 1.5vw;
   font-weight: bold;
 }
 .sub3-ban .img-area .tbox .info {
+  margin-top: 7px;
+  font-size: 1vw;
+}
+.sub3-ban .img-area li:nth-child(2) .tbox .tit {
+  font-size: 2vw;
+  font-weight: bold;
+}
+.sub3-ban .img-area li:nth-child(2) .tbox .info {
   margin-top: 7px;
   font-size: 1.5vw;
 }
@@ -170,6 +193,7 @@
 /********************* 서브 베너4 *********************/
 
 .sec5 {
+  /* background: #efefef; */
 }
 
 .sub4-ban .sec-wrap {

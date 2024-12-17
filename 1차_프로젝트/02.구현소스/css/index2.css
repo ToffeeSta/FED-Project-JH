@@ -91,8 +91,6 @@
 .sub2-ban .img-box ul li {
   width: 400px;
   margin: 20px;
-
-  outline: auto;
 }
 .sub2-ban .img-box ul li img {
   width: 100%;
@@ -181,6 +179,7 @@
   border-radius: 30px;
   /* position: sticky; */
   margin: 5%;
+  height: 80%;
 }
 
 .sub4-ban .sec-wrap > .tbox {
@@ -206,6 +205,12 @@
 
 .sub4-ban .sec-wrap .img-area .img-box {
   position: relative;
+  margin: 5%
+}
+
+.sub4-ban .sec-wrap .img-area .img-box img {
+  height: 100%;
+  width: 100%;
 }
 
 .sub4-ban .sec-wrap .img-area .img-box .tbox {

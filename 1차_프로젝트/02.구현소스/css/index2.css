@@ -91,7 +91,7 @@
 .sub2-ban .img-box ul li {
   width: 400px;
   margin: 20px;
-  
+
   outline: auto;
 }
 .sub2-ban .img-box ul li img {
@@ -169,5 +169,58 @@
   font-size: 1.5vw;
 }
 
-
 /********************* 서브 베너4 *********************/
+
+.sec5 {
+}
+
+.sub4-ban .sec-wrap {
+  padding: 50px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 30px;
+  /* position: sticky; */
+  margin: 5%;
+}
+
+.sub4-ban .sec-wrap > .tbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  line-height: 2;
+}
+
+.sub4-ban .sec-wrap > .tbox > .tit {
+  font-size: 3vw;
+  font-weight: bold;
+}
+
+.sub4-ban .sec-wrap > .tbox > .info {
+  font-size: 1.5vw;
+}
+.sub4-ban .sec-wrap .img-area > ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sub4-ban .sec-wrap .img-area .img-box {
+  position: relative;
+}
+
+.sub4-ban .sec-wrap .img-area .img-box .tbox {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sub4-ban .sec-wrap .img-area .img-box .tbox .main-txt {
+  font-size: 1.8vw;
+  font-weight: bold;
+}
+.sub4-ban .sec-wrap .img-area .img-box .tbox .sub-txt {
+  font-size: 1vw;
+}

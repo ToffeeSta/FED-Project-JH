@@ -140,25 +140,25 @@ html {
   margin: 20px auto 10px auto;
 }
 
-.sub3-ban .img-area ul {
+.sub3-ban .img-area .item-list {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: auto auto;
 }
-.sub3-ban .img-area ul li {
+.sub3-ban .img-area .item-list .item {
   border-radius: 1.4vw;
   overflow: hidden;
   margin: 7px;
 }
-.sub3-ban .img-area ul li:nth-child(2) {
+.sub3-ban .img-area .item-list .item:nth-child(2) {
   grid-row: span 2;
 }
 
-.sub3-ban .img-area ul li:hover > .img-box img {
+.sub3-ban .img-area .item-list .item:hover > .img-box img {
   transform: scale(1.05);
 }
 
-.sub3-ban .img-area ul li:nth-child(2) .tbox {
+.sub3-ban .img-area .item-list .item:nth-child(2) .tbox {
   color: white;
 }
 
@@ -185,11 +185,11 @@ html {
   margin-top: 7px;
   font-size: 1vw;
 }
-.sub3-ban .img-area li:nth-child(2) .tbox .tit {
+.sub3-ban .img-area .item:nth-child(2) .tbox .tit {
   font-size: 2vw;
   font-weight: bold;
 }
-.sub3-ban .img-area li:nth-child(2) .tbox .info {
+.sub3-ban .img-area .item:nth-child(2) .tbox .info {
   margin-top: 7px;
   font-size: 1.5vw;
 }

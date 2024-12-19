@@ -33,4 +33,22 @@ document.addEventListener("DOMContentLoaded", () => {
   observer.observe(document.querySelector(".sub1-video"));
 });
 
-//
+//////////////// 서브3(sec4) ///////////////
+const sec4MenuLi = document.querySelectorAll('.sec4-menu > ul > li');
+const sec4ConLi = document.querySelectorAll('.sec4 > .content > .item-list');
+
+let num = 0;
+
+sec4MenuLi[num].classList.add('on');
+sec4ConLi[num].classList.add('on');
+
+sec4MenuLi.forEach((itme, index) => {
+  itme.onclick = () => {
+    sec4MenuLi[num].classList.remove('on');
+    sec4ConLi[num].classList.remove('on');
+
+    itme.classList.add('on');
+    sec4ConLi[index].classList.add('on');
+    num = index;
+  }
+})  

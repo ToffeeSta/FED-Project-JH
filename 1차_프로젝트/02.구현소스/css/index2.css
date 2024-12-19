@@ -7,7 +7,12 @@
 
 html {
   background: white;
+  scroll-behavior: smooth;
 }
+section {
+  outline: auto;
+}
+
 
 /********************* 메인 베너 *********************/
 .main-ban {
@@ -113,7 +118,7 @@ html {
   height: 100vh;
 }
 .sub3-ban {
-  margin: 2%;
+  padding-top: 3%;
 }
 .sub3-ban .tbox {
   text-align: center;
@@ -131,7 +136,7 @@ html {
   width: 60%;
   margin: auto;
   display: flex;
-  justify-content:space-around;
+  justify-content: space-around;
   font-size: 1.1vw;
   font-weight: bold;
 }
@@ -141,11 +146,11 @@ html {
 }
 
 .sub3-ban .tbox .sub3-menu > ul > li::after {
-  content: '';
+  content: "";
   display: block;
   width: 100%;
   height: 3px;
-  margin-top: 10px;
+  margin-top: 0.7vw;
   transition: 0.5s;
 }
 
@@ -158,17 +163,15 @@ html {
 }
 
 .sub3-ban .tbox .sub3-menu > ul > li:hover {
- color: #1428a0;
+  color: #1428a0;
 }
-.sub3-ban .tbox .sub3-menu > ul > li:hover::after  {
+.sub3-ban .tbox .sub3-menu > ul > li:hover::after {
   background-color: #1428a0;
- }
-
-
+}
 
 .sub3-ban .item-group {
   width: 90%;
-  margin: 20px auto 10px auto;
+  margin: auto;
 }
 
 .sub3-ban .item-group .item-list {
@@ -177,7 +180,7 @@ html {
   grid-template-rows: auto auto;
 }
 
-.sub3-ban .item-group .item-list.on{
+.sub3-ban .item-group .item-list.on {
   display: grid;
 }
 
@@ -202,45 +205,68 @@ html {
 }
 .sub3-ban .item-group .tbox {
   position: absolute;
-  bottom: 10%;
+  bottom: 15%;
   left: 50%;
-  transform: translate(-50%, -10%);
+  transform: translatex(-50%);
   display: flex;
   flex-direction: column;
+  white-space: nowrap;
 }
 
 .sub3-ban .item-group .tbox .tit {
-  font-size: 1.5vw;
+  font-size: 1.1vw;
   font-weight: bold;
 }
 .sub3-ban .item-group .tbox .info {
-  margin-top: 7px;
-  font-size: 1vw;
+  margin-top: 5px;
+  font-size: 0.7vw;
 }
-.sub3-ban .item-group .item-list .item:nth-child(2) .tbox {
+
+.sub3-ban .item-group .item-list:first-child .item:nth-child(2) .tbox {
+  bottom: 5%;
   color: white;
 }
-.sub3-ban .item-group .item:nth-child(2) .tbox .tit {
-  font-size: 2vw;
+.sub3-ban .item-group .item-list:first-child .item:nth-child(2) .tbox .tit {
+  font-size: 1.5vw;
   font-weight: bold;
 }
-.sub3-ban .item-group .item:nth-child(2) .tbox .info {
-  margin-top: 7px;
+.sub3-ban .item-group .item-list:first-child .item:nth-child(2) .tbox .info {
+  font-size: 1vw;
+}
+
+.sub3-ban .item-group .tbox-big {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+}
+.sub3-ban .item-group .tbox-big .tit {
   font-size: 1.5vw;
+  font-weight: bold;
+}
+.sub3-ban .item-group .tbox-big .info {
+  font-size: 1vw;
 }
 
 /********************* 서브 베너4 *********************/
 
-.sec5 {
-  /* background: #efefef; */
+.sec5,
+.sec6,
+.sec7 {
+  height: 100vh;
+  position: relative;
 }
 
 .sub4-ban .sec-wrap {
-  padding: 3%;
+  position: absolute;
   background-color: white;
   border: 1px solid black;
   border-radius: 30px;
-  margin: 5%;
+  margin: auto;
+  height: 100%;
+  width: 100%;
 }
 
 .sub4-ban .sec-wrap > .tbox {
@@ -258,7 +284,7 @@ html {
 .sub4-ban .sec-wrap > .tbox > .info {
   font-size: 1.5vw;
 }
-.sub4-ban .sec-wrap .img-area{
+.sub4-ban .sec-wrap .img-area {
   margin-top: 2%;
 }
 .sub4-ban .sec-wrap .img-area > ul {

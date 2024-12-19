@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const video = document.querySelector(".sub1-video");
   const txtBox = document.querySelector(".tbox-ani");
-  console.log(txtBox);
+  // console.log(txtBox);
   txtBox.style.display = "none";
 
   const observer = new IntersectionObserver(
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (entry.isIntersecting && entry.intersectionRatio > 0.5) {
           video.play(); // 비디오 재생
           video.addEventListener("timeupdate", () => {
-            console.log(video.currentTime);
+            // console.log(video.currentTime);
             if (video.currentTime > 2.79) {
               txtBox.style.display = "block";
             }

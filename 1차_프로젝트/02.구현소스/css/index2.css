@@ -122,12 +122,12 @@ html {
 .sub3-ban > .tbox .tit {
   font-size: 2.5vw;
 }
-.sub3-ban .tbox .sec4-menu {
+.sub3-ban .tbox .sub3-menu {
   width: 50%;
   margin: auto;
   margin-top: 2%;
 }
-.sub3-ban .tbox .sec4-menu ul {
+.sub3-ban .tbox .sub3-menu ul {
   width: 60%;
   margin: auto;
   display: flex;
@@ -136,11 +136,11 @@ html {
   font-weight: bold;
 }
 
-.sub3-ban .tbox .sec4-menu > ul > li {
+.sub3-ban .tbox .sub3-menu > ul > li {
   cursor: pointer;
 }
 
-.sub3-ban .tbox .sec4-menu > ul > li::after {
+.sub3-ban .tbox .sub3-menu > ul > li::after {
   content: '';
   display: block;
   width: 100%;
@@ -149,18 +149,18 @@ html {
   transition: 0.5s;
 }
 
-.sub3-ban .tbox .sec4-menu > ul > li.on {
+.sub3-ban .tbox .sub3-menu > ul > li.on {
   color: #1428a0;
 }
 
-.sub3-ban .tbox .sec4-menu > ul > li.on::after {
+.sub3-ban .tbox .sub3-menu > ul > li.on::after {
   background-color: #1428a0;
 }
 
-.sub3-ban .tbox .sec4-menu > ul > li:hover {
+.sub3-ban .tbox .sub3-menu > ul > li:hover {
  color: #1428a0;
 }
-.sub3-ban .tbox .sec4-menu > ul > li:hover::after  {
+.sub3-ban .tbox .sub3-menu > ul > li:hover::after  {
   background-color: #1428a0;
  }
 

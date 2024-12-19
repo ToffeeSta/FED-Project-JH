@@ -32,8 +32,8 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 //////////////// 서브3(sec4) ///////////////
-const sec4MenuLi = document.querySelectorAll(".sec4-menu > ul > li");
-const sec4ConLi = document.querySelectorAll(".sec4 > .item-group > .item-list");
+const sec4MenuLi = document.querySelectorAll(".sub3-menu > ul > li");
+const sec4ConLi = document.querySelectorAll(".sub3-ban > .item-group > .item-list");
 
 let num = 0;
 

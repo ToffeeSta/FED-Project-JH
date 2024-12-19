@@ -7,11 +7,13 @@
 
 html {
   background: white;
-  scroll-behavior: smooth;
 }
+
 section {
-  outline: auto;
+  /* outline: auto; */
 }
+
+
 
 
 /********************* 메인 베너 *********************/
@@ -252,9 +254,7 @@ section {
 
 /********************* 서브 베너4 *********************/
 
-.sec5,
-.sec6,
-.sec7 {
+.sec5{
   height: 100vh;
   position: relative;
 }
@@ -319,4 +319,12 @@ section {
 }
 .sub4-ban .sec-wrap .img-area .img-box .tbox .sub-txt {
   font-size: 1vw;
+}
+
+
+/* 서브5 배너 */
+
+.sec6 {
+  height: 100vh;
+
 }

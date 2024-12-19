@@ -1,3 +1,35 @@
+/////////////////// 섹션간 페이지 전환 ////////////////////  
+let currentSection = 0;
+const sections = document.querySelectorAll('.scroll-area');
+let isScrolling = false;
+
+function scrollToSection(index) {
+    window.scrollTo({ top: sections[index].offsetTop, behavior: 'smooth' });
+}
+
+window.addEventListener('scroll', () => {
+    if (isScrolling) return;
+
+    const section = sections[currentSection];
+    const rect = section.getBoundingClientRect();
+    const threshold = window.innerHeight * 0.7;
+
+    // 아래로 스크롤: 하단이 70% 이상 보였을 때
+    if (rect.top < 0 && rect.bottom >= threshold) return;
+    
+    // 위로 스크롤: 상단이 70% 이상 보였을 때
+    if (rect.bottom > window.innerHeight && rect.top <= window.innerHeight * 0.3) return;
+
+    // 스크롤 방향에 따라 섹션 변경
+    currentSection += (rect.top < 0) ? 1 : (rect.bottom > window.innerHeight) ? -1 : 0;
+
+    scrollToSection(currentSection);
+    isScrolling = true;
+
+    // 스크롤 완료 후 0.5초 뒤 다시 활성화
+    setTimeout(() => isScrolling = false, 500);
+});
+
 //////////// sub1-area 비디오 재생 //////////////
 document.addEventListener("DOMContentLoaded", () => {
   const video = document.querySelector(".sub1-video");
@@ -33,7 +65,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 //////////////// 서브3(sec4) ///////////////
 const sec4MenuLi = document.querySelectorAll(".sub3-menu > ul > li");
-const sec4ConLi = document.querySelectorAll(".sub3-ban > .item-group > .item-list");
+const sec4ConLi = document.querySelectorAll(
+  ".sub3-ban > .item-group > .item-list"
+);
 
 let num = 0;
 
@@ -50,3 +84,4 @@ sec4MenuLi.forEach((item, index) => {
     num = index;
   };
 });
+

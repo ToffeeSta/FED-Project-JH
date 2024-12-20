@@ -283,6 +283,13 @@ section {
 .sub3-ban .item-group .tbox-big .info {
   font-size: 1vw;
 }
+@media (max-width: 800px) {
+  .sub3-ban .item-group .item-list {
+    display: none;
+    grid-template-columns: 1fr 1r 1fr;
+    grid-template-rows: auto;
+  }
+}
 
 /********************* 서브 베너4 *********************/
 .sub4-ban {
@@ -360,6 +367,8 @@ section {
 .sub4-ban .sec-wrap .img-area .img-box .tbox .sub-txt {
   font-size: 0.8vw;
 }
+
+
 
 /******************* 서브 배너5 *******************/
 .sec8 {
@@ -442,7 +451,7 @@ p {
   padding-left: 6px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
   .card-container {
     max-width: 600px;
   }

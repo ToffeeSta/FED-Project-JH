@@ -178,10 +178,14 @@
 }
 
 .util-wrap > ul > li{
-  width: 30px;
+  width: 20px;
   height: 20px;
-  background-color: aquamarine;
 }
+.util-wrap > ul > li img{
+  height: 100%;
+  width: 100%;
+}
+
 
 /**************** 2. 하단영역 ****************/
 .footer-area {

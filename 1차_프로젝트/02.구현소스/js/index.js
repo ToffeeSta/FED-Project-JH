@@ -17,7 +17,10 @@ function scrollToSection(index) {
   window.scrollTo({ top: sections[index].offsetTop, behavior: 'smooth' });
 }
 
-window.addEventListener('scroll', () => {
+
+window.addEventListener('wheel', (e) => {
+  console.log('ㅋㅋㅋ');
+  e.preventDefault();
   if (isScrolling) return;
 
   const section = sections[currentSection];
@@ -38,7 +41,7 @@ window.addEventListener('scroll', () => {
 
   // 스크롤 완료 후 0.6초 뒤 다시 활성화
   setTimeout(() => (isScrolling = false), 600);
-});
+},{passive: false});
 
 // 초기 활성화 상태 설정
 document.addEventListener('DOMContentLoaded', () => {

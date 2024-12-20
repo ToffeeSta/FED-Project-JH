@@ -22,7 +22,7 @@ section {
   /* outline: auto; */
 }
 
-section:not(.se1){
+section:not(.sec1){
   height: 100vh;
 }
 

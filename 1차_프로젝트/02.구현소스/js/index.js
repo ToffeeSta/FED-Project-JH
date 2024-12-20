@@ -18,7 +18,8 @@ function scrollToSection(index) {
 }
 
 
-window.addEventListener('wheel', (e) => {
+// scroll -> wheel로 변경해보기
+window.addEventListener('scroll', (e) => {
   console.log('ㅋㅋㅋ');
   e.preventDefault();
   if (isScrolling) return;

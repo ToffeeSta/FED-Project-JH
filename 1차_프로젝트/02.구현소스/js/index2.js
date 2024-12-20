@@ -1,34 +1,57 @@
-/////////////////// 섹션간 페이지 전환 ////////////////////  
+/////////////////// 섹션간 페이지 전환(스크롤 이벤트 설정) ////////////////////  
 let currentSection = 0;
 const sections = document.querySelectorAll('.scroll-area');
+const targetSections = ['sec5', 'sec6', 'sec7']; // 효과를 적용할 섹션들
 let isScrolling = false;
 
 function scrollToSection(index) {
-    window.scrollTo({ top: sections[index].offsetTop, behavior: 'smooth' });
+  sections.forEach((section, i) => {
+    const sectionId = section.id; // 섹션 ID 가져오기
+    if (targetSections.includes(sectionId) && i === index) {
+      section.classList.add('active'); // 활성화 (펴짐)
+    } else if (targetSections.includes(sectionId)) {
+      section.classList.remove('active'); // 비활성화 (접힘)
+    }
+  });
+
+  window.scrollTo({ top: sections[index].offsetTop, behavior: 'smooth' });
 }
 
 window.addEventListener('scroll', () => {
-    if (isScrolling) return;
+  if (isScrolling) return;
 
-    const section = sections[currentSection];
-    const rect = section.getBoundingClientRect();
-    const threshold = window.innerHeight * 0.7;
+  const section = sections[currentSection];
+  const rect = section.getBoundingClientRect();
+  const threshold = window.innerHeight * 0.8;
 
-    // 아래로 스크롤: 하단이 70% 이상 보였을 때
-    if (rect.top < 0 && rect.bottom >= threshold) return;
-    
-    // 위로 스크롤: 상단이 70% 이상 보였을 때
-    if (rect.bottom > window.innerHeight && rect.top <= window.innerHeight * 0.3) return;
+  // 아래로 스크롤: 하단이 80% 이상 보였을 때
+  if (rect.top < 0 && rect.bottom >= threshold) return;
 
-    // 스크롤 방향에 따라 섹션 변경
-    currentSection += (rect.top < 0) ? 1 : (rect.bottom > window.innerHeight) ? -1 : 0;
+  // 위로 스크롤: 상단이 80% 이상 보였을 때
+  if (rect.bottom > window.innerHeight && rect.top <= window.innerHeight * 0.2) return;
 
-    scrollToSection(currentSection);
-    isScrolling = true;
+  // 스크롤 방향에 따라 변경
+  currentSection += rect.top < 0 ? 1 : rect.bottom > window.innerHeight ? -1 : 0;
 
-    // 스크롤 완료 후 0.5초 뒤 다시 활성화
-    setTimeout(() => isScrolling = false, 500);
+  scrollToSection(currentSection);
+  isScrolling = true;
+
+  // 스크롤 완료 후 0.6초 뒤 다시 활성화
+  setTimeout(() => (isScrolling = false), 600);
 });
+
+// 초기 활성화 상태 설정
+document.addEventListener('DOMContentLoaded', () => {
+  sections.forEach((section, index) => {
+    const sectionId = section.id;
+    if (targetSections.includes(sectionId) && index === currentSection) {
+      section.classList.add('active');
+    }
+  });
+});
+
+
+
 
 //////////// sub1-area 비디오 재생 //////////////
 document.addEventListener("DOMContentLoaded", () => {

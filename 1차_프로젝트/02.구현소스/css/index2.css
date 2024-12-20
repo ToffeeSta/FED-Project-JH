@@ -6,7 +6,7 @@
 @import url(./inc.css);
 
 html {
-  background: #efefef;
+  background: #f6f6f6;
   white-space: nowrap;
 }
 /* 스크롤바 숨기기 */
@@ -22,8 +22,34 @@ section {
   /* outline: auto; */
 }
 
-section:not(.sec1) {
+.sec2,
+.sec3,
+.sec4,
+.sec5,
+.sec6,
+.sec7,
+.sec8 {
   height: 100vh;
+}
+.bg-grad1 {
+  background: linear-gradient(#f6f6f6, #000);
+  height: 10px;
+}
+
+.sec5,
+.sec6,
+.sec7 {
+  transform: scaleX(0); /* 초기 상태: 너비가 0인 상태 */
+  transform-origin: center; /* 중심 축을 가운데로 설정 */
+  opacity: 0; /* 보이지 않도록 설정 */
+  transition: transform 0.5s ease, opacity 0.5s ease; /* 트랜지션 효과 */
+}
+
+.sec5.active,
+.sec6.active,
+.sec7.active {
+  transform: scaleX(1); /* 원래 크기로 확장 */
+  opacity: 1; /* 보이도록 설정 */
 }
 
 /********************* 메인 베너 *********************/
@@ -208,11 +234,9 @@ section:not(.sec1) {
 
 .sub3-ban .item-group .img-box {
   position: relative;
-  
 }
 .sub3-ban .item-group .img-box img {
   width: 100%;
-  
 }
 .sub3-ban .item-group .tbox {
   position: absolute;

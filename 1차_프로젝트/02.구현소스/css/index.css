@@ -285,11 +285,9 @@ section:not(.sec1){
 }
 
 /********************* 서브 베너4 *********************/
-.sub4-ban {
-}
-
 .sub-sec {
   position: relative;
+
   height: 100vh;
 }
 

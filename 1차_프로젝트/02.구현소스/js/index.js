@@ -4,9 +4,6 @@ const sections = document.querySelectorAll('.scroll-area');
 const targetSections = ['sec5', 'sec6', 'sec7']; // 효과를 적용할 섹션들
 let isScrolling = false;
 
-
-
-
 function scrollToSection(index) {
   sections.forEach((section, i) => {
     const sectionId = section.id; // 섹션 ID 가져오기
@@ -21,19 +18,20 @@ function scrollToSection(index) {
 }
 
 
-window.addEventListener('scroll', (e) => {
+// scroll -> wheel로 변경해보기
+window.addEventListener('wheel', (e) => {
   e.preventDefault();
   if (isScrolling) return;
 
   const section = sections[currentSection];
   const rect = section.getBoundingClientRect();
-  const threshold = window.innerHeight * 0.7;
+  const threshold = window.innerHeight * 0.8;
 
   // 아래로 스크롤: 하단이 80% 이상 보였을 때
   if (rect.top < 0 && rect.bottom >= threshold) return;
 
   // 위로 스크롤: 상단이 80% 이상 보였을 때
-  if (rect.bottom > window.innerHeight && rect.top <= window.innerHeight * 0.3) return;
+  if (rect.bottom > window.innerHeight && rect.top <= window.innerHeight * 0.2) return;
 
   // 스크롤 방향에 따라 변경
   currentSection += rect.top < 0 ? 1 : rect.bottom > window.innerHeight ? -1 : 0;
@@ -42,8 +40,8 @@ window.addEventListener('scroll', (e) => {
   isScrolling = true;
 
   // 스크롤 완료 후 0.6초 뒤 다시 활성화
-  setTimeout(() => (isScrolling = false), 700);
-},{passive: false});
+  setTimeout(() => (isScrolling = false), 600);
+});
 
 // 초기 활성화 상태 설정
 document.addEventListener('DOMContentLoaded', () => {
@@ -112,3 +110,4 @@ sec4MenuLi.forEach((item, index) => {
     num = index;
   };
 });
+

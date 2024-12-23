@@ -20,3 +20,22 @@ window.addEventListener('scroll',function(){
         }
     }
 })
+
+
+
+
+$(() => {
+  $(".gnb a").click(function (e) {
+    e.preventDefault();
+    let idName = $(this).attr("href");
+    let pos = $(idName).offset().top;
+    // let currIdx = $(idName).index();
+    // currentSection = currIdx;
+    console.log(pos);
+    $("html, body").animate({ scrollTop: pos }, 500,()=>{
+        $(idName).addClass("active")
+        .siblings().removeClass("active");
+
+    });
+  });
+});

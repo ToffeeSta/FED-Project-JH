@@ -257,12 +257,31 @@ section:not(.sec1){
 .sub3-ban .item-group .tbox-big .info {
   font-size: 1vw;
 }
+
 @media (max-width: 800px) {
   .sub3-ban .item-group .item-list {
-    display: none;
-    grid-template-columns: 1fr 1r 1fr;
-    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+    grid-template-rows: 1fr 2fr 1fr;
   }
+
+  .sub3-ban .item-group .item-list .item:nth-child(2) {
+    grid-column: span 2;
+    grid-row: span 1;
+    order: 3;
+  }
+
+  .sub3-ban .item-group .item-list .item:nth-child(4) {
+    order: 4;
+  }
+
+  .sub3-ban .item-group .item-list .item:nth-child(5) {
+    order: 5;
+  }
+
+  .sub3-ban .item-group {
+    width: 50%; 
+  }
+
 }
 
 /********************* 서브 베너4 *********************/
@@ -345,10 +364,10 @@ section:not(.sec1){
 .sec5,
 .sec6,
 .sec7 {
-  transform: scaleX(20%); /* 초기 상태 */
+  transform: scaleX(30%); /* 초기 상태 */
   transform-origin: center; /* 중심 축을 가운데로 설정 */
   opacity: 0; /* 보이지 않도록 설정 */
-  transition: transform 0.7s ease, opacity 0.7s ease; /* 트랜지션 효과 */
+  transition: transform 1s ease, opacity 1s ease; /* 트랜지션 효과 */
 }
 
 .sec5.active,

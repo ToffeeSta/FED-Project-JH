@@ -279,7 +279,7 @@ section:not(.sec1){
   }
 
   .sub3-ban .item-group {
-    width: 50%; 
+    width: calc(100% / 2);; 
   }
 
 }
@@ -443,7 +443,6 @@ p {
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
   word-break: break-all;
   font-size: 12px;
   color: #5a6a72;
@@ -451,12 +450,7 @@ p {
   margin-bottom: 16px;
 }
 
-.underline {
-  text-decoration: underline;
-  font-weight: bold;
-  font-size: 14px;
-  padding-left: 6px;
-}
+
 
 @media (max-width: 800px) {
   .card-container {

@@ -33,7 +33,7 @@ window.addEventListener('wheel', (e) => {
   isScrolling = true;
 
   // 스크롤 완료 후 다시 활성화
-  setTimeout(() => (isScrolling = false), 1000);
+  setTimeout(() => (isScrolling = false), 600);
 });
 
 // 초기 활성화 상태 설정

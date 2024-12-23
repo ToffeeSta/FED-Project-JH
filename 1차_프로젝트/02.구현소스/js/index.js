@@ -4,6 +4,9 @@ const sections = document.querySelectorAll('.scroll-area');
 const targetSections = ['sec5', 'sec6', 'sec7']; // 효과를 적용할 섹션들
 let isScrolling = false;
 
+
+
+
 function scrollToSection(index) {
   sections.forEach((section, i) => {
     const sectionId = section.id; // 섹션 ID 가져오기
@@ -17,24 +20,30 @@ function scrollToSection(index) {
   window.scrollTo({ top: sections[index].offsetTop, behavior: 'smooth' });
 }
 
-// wheel 이벤트로 변경
-window.addEventListener('wheel', (e) => {
+
+window.addEventListener('scroll', (e) => {
+  e.preventDefault();
   if (isScrolling) return;
 
-  const delta = e.deltaY; // 휠의 움직임 방향 (양수: 아래, 음수: 위)
-  const nextSection = delta > 0 ? currentSection + 1 : currentSection - 1;
+  const section = sections[currentSection];
+  const rect = section.getBoundingClientRect();
+  const threshold = window.innerHeight * 0.7;
 
-  // 유효한 섹션 범위로 제한
-  if (nextSection < 0 || nextSection >= sections.length) return;
+  // 아래로 스크롤: 하단이 80% 이상 보였을 때
+  if (rect.top < 0 && rect.bottom >= threshold) return;
 
-  currentSection = nextSection;
+  // 위로 스크롤: 상단이 80% 이상 보였을 때
+  if (rect.bottom > window.innerHeight && rect.top <= window.innerHeight * 0.3) return;
+
+  // 스크롤 방향에 따라 변경
+  currentSection += rect.top < 0 ? 1 : rect.bottom > window.innerHeight ? -1 : 0;
 
   scrollToSection(currentSection);
   isScrolling = true;
 
-  // 스크롤 완료 후 다시 활성화
-  setTimeout(() => (isScrolling = false), 600);
-});
+  // 스크롤 완료 후 0.6초 뒤 다시 활성화
+  setTimeout(() => (isScrolling = false), 700);
+},{passive: false});
 
 // 초기 활성화 상태 설정
 document.addEventListener('DOMContentLoaded', () => {
@@ -46,10 +55,14 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+
+
+
 //////////// sub1-area 비디오 재생 //////////////
 document.addEventListener("DOMContentLoaded", () => {
   const video = document.querySelector(".sub1-video");
   const txtBox = document.querySelector(".tbox-ani");
+  // console.log(txtBox);
   txtBox.style.display = "none";
 
   const observer = new IntersectionObserver(
@@ -58,6 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (entry.isIntersecting && entry.intersectionRatio > 0.5) {
           video.play(); // 비디오 재생
           video.addEventListener("timeupdate", () => {
+            // console.log(video.currentTime);
             if (video.currentTime > 2.79) {
               txtBox.style.display = "block";
             }

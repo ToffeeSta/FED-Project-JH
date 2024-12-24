@@ -37,6 +37,13 @@ window.addEventListener('scroll', (e) => {
 
   scrollToSection(currentSection);
   isScrolling = true;
+// console.log(currentSection);
+
+// if(currentSection == 5 || currentSection == 6) {
+//   console.log('누규?');
+//     $('.scroll-area').eq(currentSection-1).css({transform:'translateY(100vh) scaleX(100%)'})
+
+//   }
 
   // 스크롤 완료 후 0.6초 뒤 다시 활성화
   setTimeout(() => (isScrolling = false), 600);

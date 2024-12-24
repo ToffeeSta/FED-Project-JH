@@ -357,13 +357,14 @@ section:not(.sec1){
 .sub4-ban .sec-wrap .img-area .img-box .tbox .sub-txt {
   font-size: 0.8vw;
 }
+
 /* 스크롤 이벤트  */
 .sec5,
 .sec6,
 .sec7 {
-  transform: scaleX(30%); /* 초기 상태 */
+  transform: scaleX(40%); /* 초기 상태 */
   transform-origin: center; /* 중심 축을 가운데로 설정 */
-  opacity: 0; /* 보이지 않도록 설정 */
+  opacity: .5; /* 보이지 않도록 설정 */
   transition: transform 1s ease, opacity 1s ease; /* 트랜지션 효과 */
 }
 

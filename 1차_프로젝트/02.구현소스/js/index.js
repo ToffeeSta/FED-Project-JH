@@ -18,7 +18,6 @@ function scrollToSection(index) {
 }
 
 
-// scroll -> wheel로 변경해보기
 window.addEventListener('scroll', (e) => {
   e.preventDefault();
   if (isScrolling) return;

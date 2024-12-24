@@ -22,7 +22,7 @@ section {
   /* outline: auto; */
 }
 
-section:not(.sec1){
+section:not(.sec1) {
   height: 100vh;
 }
 
@@ -279,9 +279,8 @@ section:not(.sec1){
   }
 
   .sub3-ban .item-group {
-    width: calc(100% / 2);; 
+    width: calc(100% / 2);
   }
-
 }
 
 /********************* 서브 베너4 *********************/
@@ -362,9 +361,9 @@ section:not(.sec1){
 .sec5,
 .sec6,
 .sec7 {
-  transform: scaleX(40%); /* 초기 상태 */
+  transform: scaleX(30%); /* 초기 상태 */
   transform-origin: center; /* 중심 축을 가운데로 설정 */
-  opacity: .5; /* 보이지 않도록 설정 */
+  opacity: 0.5; /* 보이지 않도록 설정 */
   transition: transform 1s ease, opacity 1s ease; /* 트랜지션 효과 */
 }
 
@@ -431,27 +430,31 @@ p {
 }
 .card-text .title {
   font-size: 16px;
-  white-space: nowrap;
-
-  -webkit-line-clamp: 2;
-  overflow: hidden;
   text-overflow: ellipsis;
   margin-bottom: 12px;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+  
 }
 
 .card-text .title + p {
   overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
   word-break: break-all;
   font-size: 12px;
   color: #5a6a72;
   line-height: 20px;
   margin-bottom: 16px;
+  display: -webkit-box;
   text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  white-space: normal;
 }
-
-
 
 @media (max-width: 800px) {
   .card-container {

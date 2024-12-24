@@ -184,6 +184,9 @@
 
 
 /**************** 2. 하단영역 ****************/
-.footer-area {
-  height: 320px;
+#footer {
+   border-top: 1px solid #525252;
+}
+.bottom-area{
+  height: 250px;
 }

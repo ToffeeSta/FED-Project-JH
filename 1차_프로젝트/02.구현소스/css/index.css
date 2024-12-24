@@ -432,6 +432,8 @@ p {
 .card-text .title {
   font-size: 16px;
   white-space: nowrap;
+
+  -webkit-line-clamp: 2;
   overflow: hidden;
   text-overflow: ellipsis;
   margin-bottom: 12px;
@@ -446,6 +448,7 @@ p {
   color: #5a6a72;
   line-height: 20px;
   margin-bottom: 16px;
+  text-overflow: ellipsis;
 }
 
 

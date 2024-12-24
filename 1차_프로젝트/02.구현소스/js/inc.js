@@ -12,6 +12,6 @@ $(function () {
     //푸터는 위와 동일
     $("#footer").load("inc.html .bottom-area",function(){
         $.getScript('./js/footer.js');
-        $.getScript('./js/index.js');
+        
 })
 });

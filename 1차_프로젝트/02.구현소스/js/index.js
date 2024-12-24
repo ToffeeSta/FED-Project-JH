@@ -26,13 +26,13 @@ window.addEventListener("scroll", (e) => {
   if (!section) return; // currentSection이 유효한지 확인
 
   const rect = section.getBoundingClientRect();
-  const threshold = window.innerHeight * 0.8;
+  const threshold = window.innerHeight * 0.6;
 
   // 아래로 스크롤: 하단이 80% 이상 보였을 때
   if (rect.top < 0 && rect.bottom >= threshold) return;
 
   // 위로 스크롤: 상단이 80% 이상 보였을 때
-  if (rect.bottom > window.innerHeight && rect.top <= window.innerHeight * 0.2)
+  if (rect.bottom > window.innerHeight && rect.top <= window.innerHeight * 0.4)
     return;
 
   // 스크롤 방향에 따라 변경

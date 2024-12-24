@@ -8,6 +8,7 @@
 html {
   background: #f6f6f6;
   white-space: nowrap;
+  scroll-behavior: smooth;
 }
 /* 스크롤바 숨기기 */
 body {
@@ -19,7 +20,7 @@ body {
 }
 
 section {
-  /* outline: auto; */
+  outline: auto;
 }
 
 section:not(.sec1) {
@@ -109,7 +110,7 @@ section:not(.sec1) {
 }
 .sub2-ban .img-box ul li {
   width: 400px;
-  margin: 20px;
+  margin: 40px;
 }
 .sub2-ban .img-box ul li img {
   width: 100%;

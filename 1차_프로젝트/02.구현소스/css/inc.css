@@ -42,33 +42,33 @@
   width: 12vw;
 }
 /******** 네비 박스 요소 ********/
-.cont-box {
+.top-area .cont-box {
   height: 100%;
   display: flex;
   justify-content: space-between  ;
 }
 /* 1-1. 상단 로고 */
-.logo {
+.top-area .logo {
   padding: 10px;
   margin: auto auto;
 }
-.logo img {
+.top-area .logo img {
   width: 12vw;
   margin: 0;
 }
 
 /* 1-2. GNB 메뉴 */
-.fx-box {
+.top-area .fx-box {
   /* margin-top: 10px; */
 
 }
 /* GNB 메뉴 하위 a요소 */
-.gnb a {
+.top-area .gnb a {
   display: block;
   /* 블록요소로 확장설정함! */
 }
 /* 메뉴 플렉스박스 설정 */
-.gnb ul {
+.top-area .gnb ul {
   display: flex;
   /* 진행방향 오른쪽끝정렬 */
   justify-content: center;
@@ -82,14 +82,14 @@
   
 }
 
-.col-6{
+.top-area .col-6{
   flex: 1;
   margin: 0 30px;
 }
 
 /* 상위메뉴만 적용하기 
 직계자식(>)선택으로 상위메뉴만 선택 */
-.gnb ul > li {
+.top-area .gnb ul > li {
   position: relative;
   /* 부모자격 - .smenu의 left값 */
   /* float: left; ->flex로 전환 */
@@ -105,22 +105,22 @@
 
 
 /* .gnb ul>li 마우스 오버시 하위 a 색상변경 */
-.gnb ul > li:hover > a {
+.top-area .gnb ul > li:hover > a {
   color: #1428a0;
 }
 
 
-.uline{
+.top-area .uline{
   width: 100%;
   height: 100%;
 }
 
 
 
-.uline ul > li > a {
+.top-area .uline ul > li > a {
   position: relative;
 }
-.uline ul > li > a::after {
+.top-area .uline ul > li > a::after {
   content: "";
   display: block;
   position: absolute;
@@ -131,7 +131,7 @@
 
   background-color: #1428a0;
 
-  margin-top: 44px;
+  margin-top: 45px;
   /* margin-left: 50%; */
 
   transition: 0.3s;
@@ -139,7 +139,7 @@
 }
 
 /* 오버시 밑줄박스 애니 */
-.uline ul > li:hover > a::after {
+.top-area .uline ul > li:hover > a::after {
   width: 100%;
   margin-bottom: 0;
 }
@@ -151,13 +151,13 @@
   align-items: center;
 }
 
-.util-wrap .q{
+.top-area .util-wrap .q{
   width: 80px;
   height: 40px;
   margin-right: 30px;
 }
 
-.util-wrap .q > a{
+.top-area .util-wrap .q > a{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -168,16 +168,16 @@
   border-radius: 20px;
 }
 
-.util-wrap > ul {
+.top-area .util-wrap > ul {
   display: flex;
   gap: 10px;
 }
 
-.util-wrap > ul > li{
+.top-area .util-wrap > ul > li{
   width: 20px;
   height: 20px;
 }
-.util-wrap > ul > li img{
+.top-area .util-wrap > ul > li img{
   height: 100%;
   width: 100%;
 }
@@ -186,7 +186,11 @@
 /**************** 2. 하단영역 ****************/
 #footer {
    border-top: 1px solid #525252;
-}
-.bottom-area{
-  height: 250px;
+   
+   padding: 0;
+   top: 0;
+   width: 100%;
+   height: 250px;
+  }
+  .bottom-area{
 }

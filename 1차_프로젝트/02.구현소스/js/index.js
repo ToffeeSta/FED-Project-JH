@@ -1,64 +1,64 @@
-// /////////////////// 섹션간 페이지 전환(스크롤 이벤트 설정) ////////////////////
-// let currentSection = 0;
-// const sections = document.querySelectorAll(".scroll-area");
-// const targetSections = ["sec5", "sec6", "sec7"]; // 효과를 적용할 섹션들
-// let isScrolling = false;
+/////////////////// 섹션간 페이지 전환(스크롤 이벤트 설정) ////////////////////
+let currentSection = 0;
+const sections = document.querySelectorAll(".scroll-area");
+const targetSections = ["sec5", "sec6", "sec7"]; // 효과를 적용할 섹션들
+let isScrolling = false;
 
-// function scrollToSection(index) {
-//   if (index < 0 || index >= sections.length) return; // 배열 범위 초과 방지
+function scrollToSection(index) {
+  if (index < 0 || index >= sections.length) return; // 배열 범위 초과 방지
 
-//   sections.forEach((section, i) => {
-//     const sectionId = section.id; // 섹션 ID 가져오기
-//     if (targetSections.includes(sectionId) && i === index) {
-//       section.classList.add("active"); // 활성화 (펴짐)
-//     } else if (targetSections.includes(sectionId)) {
-//       section.classList.remove("active"); // 비활성화 (접힘)
-//     }
-//   });
+  sections.forEach((section, i) => {
+    const sectionId = section.id; // 섹션 ID 가져오기
+    if (targetSections.includes(sectionId) && i === index) {
+      section.classList.add("active"); // 활성화 (펴짐)
+    } else if (targetSections.includes(sectionId)) {
+      section.classList.remove("active"); // 비활성화 (접힘)
+    }
+  });
 
-//   window.scrollTo({ top: sections[index].offsetTop, behavior: "smooth" });
-// }
+  window.scrollTo({ top: sections[index].offsetTop, behavior: "smooth" });
+}
 
-// window.addEventListener("scroll", (e) => {
-//   if (isScrolling) return;
+window.addEventListener("scroll", (e) => {
+  if (isScrolling) return;
 
-//   const section = sections[currentSection];
-//   if (!section) return; // currentSection이 유효한지 확인
+  const section = sections[currentSection];
+  if (!section) return; // currentSection이 유효한지 확인
 
-//   const rect = section.getBoundingClientRect();
-//   const threshold = window.innerHeight * 0.6;
+  const rect = section.getBoundingClientRect();
+  const threshold = window.innerHeight * 0.6;
 
-//   // 아래로 스크롤: 하단이 80% 이상 보였을 때
-//   if (rect.top < 0 && rect.bottom >= threshold) return;
+  // 아래로 스크롤: 하단이 80% 이상 보였을 때
+  if (rect.top < 0 && rect.bottom >= threshold) return;
 
-//   // 위로 스크롤: 상단이 80% 이상 보였을 때
-//   if (rect.bottom > window.innerHeight && rect.top <= window.innerHeight * 0.4)
-//     return;
+  // 위로 스크롤: 상단이 80% 이상 보였을 때
+  if (rect.bottom > window.innerHeight && rect.top <= window.innerHeight * 0.4)
+    return;
 
-//   // 스크롤 방향에 따라 변경
-//   const nextSection =
-//     rect.top < 0 ? currentSection + 1 : rect.bottom > window.innerHeight ? currentSection - 1 : currentSection;
+  // 스크롤 방향에 따라 변경
+  const nextSection =
+    rect.top < 0 ? currentSection + 1 : rect.bottom > window.innerHeight ? currentSection - 1 : currentSection;
 
-//   // currentSection 업데이트 (배열 범위 초과 방지)
-//   if (nextSection >= 0 && nextSection < sections.length) {
-//     currentSection = nextSection;
-//     scrollToSection(currentSection);
-//     isScrolling = true;
+  // currentSection 업데이트 (배열 범위 초과 방지)
+  if (nextSection >= 0 && nextSection < sections.length) {
+    currentSection = nextSection;
+    scrollToSection(currentSection);
+    isScrolling = true;
 
-//     // 스크롤 완료 후 0.6초 뒤 다시 활성화
-//     setTimeout(() => (isScrolling = false), 600);
-//   }
-// });
+    // 스크롤 완료 후 0.6초 뒤 다시 활성화
+    setTimeout(() => (isScrolling = false), 600);
+  }
+});
 
-// // 초기 활성화 상태 설정
-// document.addEventListener("DOMContentLoaded", () => {
-//   sections.forEach((section, index) => {
-//     const sectionId = section.id;
-//     if (targetSections.includes(sectionId) && index === currentSection) {
-//       section.classList.add("active");
-//     }
-//   });
-// });
+// 초기 활성화 상태 설정
+document.addEventListener("DOMContentLoaded", () => {
+  sections.forEach((section, index) => {
+    const sectionId = section.id;
+    if (targetSections.includes(sectionId) && index === currentSection) {
+      section.classList.add("active");
+    }
+  });
+});
 
 
 //////////// sub1-area 비디오 재생 //////////////

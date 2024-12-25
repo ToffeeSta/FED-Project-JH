@@ -300,6 +300,7 @@
   width: 30px;
   height: 30px;
   background-position: 50% 50%;
+  transform: rotate(-180deg);
 }
 
 
@@ -320,7 +321,7 @@
 }
 
 #footer .bottom-area .right .btn-box .btn-wrap.on > button::after {
-  transform: rotate(-180deg);
+  transform: rotate(0deg);
 }
 
 .bottom-area #footer .bottom-area .right .btn-box .btn-list-box ul {

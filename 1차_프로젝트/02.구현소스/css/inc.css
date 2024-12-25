@@ -185,12 +185,153 @@
 
 /**************** 2. 하단영역 ****************/
 #footer {
-   border-top: 1px solid #525252;
-   
-   padding: 0;
-   top: 0;
-   width: 100%;
-   height: 250px;
-  }
-  .bottom-area{
+  border-top: 1px solid #525252;
+  background-color: #1428a0;
+  color: white;
+}
+
+#footer .bottom-area {
+ display: flex;
+ justify-content: space-between;
+ padding: 4%;
+}
+
+#footer .bottom-area .left{
+ width: 50%;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+}
+
+#footer .bottom-area .left .logo{
+margin: 0;
+}
+
+#footer .bottom-area .left .logo > img{
+  width: 100%;
+  height: 100%;
+}
+
+#footer .bottom-area .left .footer-info{
+ display: flex;
+ flex-wrap: wrap;
+ column-gap: 20px;
+ row-gap: 10px;
+}
+
+#footer .bottom-area .left .footer-info > span{
+ font-size: 16px;
+}
+
+
+
+
+#footer .bottom-area .right{
+ width: 50%;
+ display: flex;
+ flex-direction: column;
+ align-items: end;
+ row-gap: 30px;
+}
+
+#footer .bottom-area .right .footer-nav{
+ display: flex;
+ justify-content: end;
+}
+
+
+#footer .bottom-area .right .footer-nav > li{
+ font-size: 24px;
+ margin-left: 30px;
+ position: relative;
+}
+
+#footer .bottom-area .right .footer-nav > li + li::before{
+ content: "";
+ display: block;
+ width: 1px;
+ height: 50%;
+ position: absolute;
+ top: 50%;
+ left: -25%;
+ transform: translate(25%, -50%);
+ background-color: aqua;
+}
+
+#footer .bottom-area .right .sub-img{
+ display: flex;
+ justify-content: end;
+}
+
+#footer .bottom-area .right .sub-img > li{
+ width: 40px;
+ height: 40px;
+ margin-left: 50px;
+}
+
+#footer .bottom-area .right .sub-img > li > img{
+ width: 100%;
+ height: 100%;
+}
+
+#footer .bottom-area .right .btn-box{
+ width: 470px;
+ height: 80px;
+ position: relative;
+}
+
+#footer .bottom-area .right .btn-box > button{
+ width: 100%;
+ height: 100%;
+ text-align: left;
+ padding: 0 10%;
+ background-color: black;
+   color: white;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ font-size: 18px;
+ border: none;
+ border-radius: 10px;
+ cursor: pointer;
+}
+
+#footer .bottom-area .right .btn-box > button::after{
+ content: '';
+ display: block;
+ background-image: url('../img/arr.svg');
+ background-repeat: no-repeat;
+ width: 30px;
+ height: 30px;
+ background-position: 50% 50%;
+}
+
+#footer .bottom-area .right .btn-box .caution-list-box{
+ position: absolute;
+ width: 100%;
+ bottom: 120%;
+ background-color: white;
+ border-radius: 2%;
+ overflow: hidden;
+ border: 1px solid rgba(0, 0, 0, 0.441);
+}
+
+#footer .bottom-area .right .btn-box .caution-list-box > ul{
+
+}
+
+
+#footer .bottom-area .right .btn-box .caution-list-box > ul > li{
+ color: black;
+ padding: 5% 3%;
+ font-size: 16px;
+ cursor: pointer;
+}
+
+#footer .bottom-area .right .btn-box .caution-list-box > ul > li:hover{
+ background-color: #f36531;
+}
+
+#footer .bottom-area .right .btn-box .caution-list-box > ul > li+li{
+ border-top: 1px solid rgba(0, 0, 0, 0.247);
 }

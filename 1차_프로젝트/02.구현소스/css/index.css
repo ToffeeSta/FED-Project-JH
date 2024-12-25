@@ -23,8 +23,13 @@ section {
   outline: auto;
 }
 
-section:not(.sec1) {
+section:not(.sec1, .sec4, .sec8) {
   height: 100vh;
+}
+
+#sec8{
+  min-height: 100vh;
+  height: auto;
 }
 
 /********************* 메인 베너 *********************/
@@ -126,6 +131,10 @@ section:not(.sec1) {
 }
 
 /********************* 서브 베너3 *********************/
+#sec4{
+  min-height: 100vh;
+  height: auto;
+}
 .sub3-ban {
   padding-top: 3%;
 }
@@ -280,7 +289,7 @@ section:not(.sec1) {
   }
 
   .sub3-ban .item-group {
-    width: calc(100% / 2);
+    width: 95%;
   }
 }
 

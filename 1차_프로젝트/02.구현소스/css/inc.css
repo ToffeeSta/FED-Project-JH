@@ -121,7 +121,7 @@
   top: 0;
   left: 50%;
   width: 0%;
-  height: 3px;
+  height: 4px;
 
   background-color: #1428a0;
 
@@ -178,7 +178,7 @@
 
 /**************** 2. 하단영역 ****************/
 #footer {
-  border-top: 1px solid #525252;
+  border-top: 2px solid #ffffff;
   color: #5e5e5e;
 }
 
@@ -201,7 +201,7 @@
 
 #footer .bottom-area .left .logo > img {
   width: 40%;
-  opacity: 80;
+  margin-left: -11px;
 }
 
 #footer .bottom-area .left .footer-info {
@@ -304,13 +304,13 @@
 
 #footer .bottom-area .right .btn-box .btn-list-box {
   position: absolute;
-  width: 50%;
+  width: calc(100%/3);
   bottom: 120%;
   background-color: white;
   border-radius: 10%;
   overflow: hidden;
   border: 1px solid rgba(0, 0, 0, 0.441);
-  opacity: 0;
+  opacity: .5;
 }
 
 .bottom-area #footer .bottom-area .right .btn-box .btn-list-box ul {

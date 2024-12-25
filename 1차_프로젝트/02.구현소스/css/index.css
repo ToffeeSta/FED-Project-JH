@@ -20,7 +20,7 @@ body {
 }
 
 section {
-  outline: auto;
+  /* outline: auto; */
 }
 
 section:not(.sec1, .sec4, .sec8) {

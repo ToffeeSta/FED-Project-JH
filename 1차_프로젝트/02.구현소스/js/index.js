@@ -2,7 +2,7 @@
 let currentSection = 0;
 const sections = document.querySelectorAll(".scroll-area");
 const targetSections = ["sec5", "sec6", "sec7"]; // 효과를 적용할 섹션들
-let isScrolling = false;
+let isScrolling = false; 
 
 function scrollToSection(index) {
   if (index < 0 || index >= sections.length) return; // 배열 범위 초과 방지

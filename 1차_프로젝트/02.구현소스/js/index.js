@@ -116,7 +116,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   );
 
-  // 관찰 시작
   observer.observe(video);
 });
 

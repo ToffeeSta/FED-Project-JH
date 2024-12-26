@@ -24,6 +24,8 @@ window.addEventListener("scroll", function () {
 $(".gnb a").click(function (e) {
   e.preventDefault();
 
+
+
   let idName = $(this).attr("href");
   let pos = $(idName).offset().top;
   currentSection = $(idName).index(".scroll-area");

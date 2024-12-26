@@ -87,7 +87,7 @@ section:not(.sec1, .sec4, .sec8) {
   color: #ededed;
   text-shadow: 0 0 5px #000;
   text-align: center;
-  opacity: 1;
+  opacity: 0;
   scale: .5;
   transition: opacity 1s ease, transform 1s ease, scale 1s ease;
 }

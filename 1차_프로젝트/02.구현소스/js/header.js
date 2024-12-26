@@ -24,14 +24,14 @@ window.addEventListener("scroll", function () {
 $(".gnb a").click(function (e) {
   e.preventDefault();
 
-
-
   let idName = $(this).attr("href");
   let pos = $(idName).offset().top;
   currentSection = $(idName).index(".scroll-area");
 
   // 스크롤 이동 후 currentSection에 맞게 동기화
-  $("html, body").animate({ scrollTop: pos }, 300, () => {
+  $("html, body").animate({ scrollTop: pos }, () => {
     $(idName).addClass("active").siblings().removeClass("active");
   });
+  console.log(currentSection);
+  
 });

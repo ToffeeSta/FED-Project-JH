@@ -23,7 +23,7 @@ window.addEventListener("scroll", (e) => {
   if (isScrolling) return;
 
   const section = sections[currentSection];
-  if (!section) return; // currentSection이 유효한지 확인
+  if (!section) return;
 
   const rect = section.getBoundingClientRect();
   const threshold = window.innerHeight * 0.7;
@@ -43,7 +43,7 @@ window.addEventListener("scroll", (e) => {
       ? currentSection - 1
       : currentSection;
 
-  // currentSection 업데이트 (배열 범위 초과 방지)
+  // currentSection 업데이트
   if (nextSection >= 0 && nextSection < sections.length) {
     currentSection = nextSection;
     scrollToSection(currentSection);
@@ -52,6 +52,7 @@ window.addEventListener("scroll", (e) => {
     // 스크롤 완료 후 0.6초 뒤 다시 활성화
     setTimeout(() => (isScrolling = false), 600);
   }
+  console.log(currentSection);
 });
 
 // 초기 활성화 상태 설정

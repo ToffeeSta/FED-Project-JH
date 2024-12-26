@@ -73,7 +73,6 @@ document.addEventListener("DOMContentLoaded", () => {
   setTimeout(() => {
     tbox.style.opacity = "1";
     tbox.style.scale = "1";
-    // tbox.style.transform = "translate(80% , -50%)"; // 이동 위치 변경
   }, 200);
   setTimeout(() => {
     videobox.style.transform = "translateX(0)"; // 이동 위치 변경
